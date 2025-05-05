@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Athiti } from 'next/font/google'
+import { Mitr } from 'next/font/google'
 import "./globals.css";
-const athiti = Athiti({
+const mitr = Mitr({
   subsets: ["thai", "latin"], 
   weight: ["400", "700"], 
   display: "swap",
@@ -9,8 +9,8 @@ const athiti = Athiti({
 
 
 export const metadata: Metadata = {
-  title: "LZCRental",
-  description: "LZCRental",
+  title: "LazyCat Software🐱",
+  description: "LazyCat Software🐱",
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html data-theme="retro">
       <body
-        className={`${athiti.className} `} 
+        className={`${mitr.className}`}
       >
         {children}
       </body>
